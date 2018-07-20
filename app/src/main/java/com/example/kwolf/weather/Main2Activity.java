@@ -184,10 +184,9 @@ public class Main2Activity extends AppCompatActivity {
                             ListView ls = (ListView) findViewById(R.id.list1);
                             SimpleAdapter simpleAdapter = new SimpleAdapter(Main2Activity.this,data,R.layout.item1,new String[]{"title","content"},new int[]{R.id.item1,R.id.item2});
                             ls.setAdapter(simpleAdapter);
+
                             l1.next();
                             s1 = l1.next().toString();
-                            TextView t7 = (TextView) findViewById(R.id.temp2);
-                            t7.setText(s1);
 
                             List<Map<String,String>> data1 = new ArrayList<>();
                             Map<String,String> temp5 = new LinkedHashMap<>();
@@ -196,6 +195,8 @@ public class Main2Activity extends AppCompatActivity {
                             temp5.put("date",s1.substring(0,x1));
                             temp5.put("weather1",s1.substring(x1+1));
                             l1.next();
+                            TextView t7 = (TextView) findViewById(R.id.temp2);
+                            t7.setText(l1.toString());
                             temp.put("temper",l1.toString());
                             data1.add(temp5);
 
