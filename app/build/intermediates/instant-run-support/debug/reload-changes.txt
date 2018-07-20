@@ -1,0 +1,12 @@
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$styleable$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$string$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$id$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$integer$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\Main2Activity$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$mipmap$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$layout$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\R$style$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\Main2Activity$3$override.class
+CHANGED,H:\Academy\Github\weatherfakeapp\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\kwolf\weather\Main2Activity$2$override.class

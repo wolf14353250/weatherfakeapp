@@ -1,5 +1,8 @@
 package com.example.kwolf.weather;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
@@ -60,6 +63,34 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putString("city",name);
                 intent.putExtras(bundle);
                 startActivity(intent);
+            }
+        });
+
+        ls.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
+                HashMap<String,String> map = (HashMap<String,String>) parent.getItemAtPosition(position);
+                final String name = map.get("name");
+                AlertDialog.Builder mybuilder = new AlertDialog.Builder(MainActivity.this);
+                mybuilder.setTitle("删除城市");
+                mybuilder.setMessage("确定删除"+name);
+                mybuilder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        database db = new database(MainActivity.this);
+                        db.delete1(name);
+                        onStart();
+                    }
+                });
+                mybuilder.setNegativeButton("否", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                Dialog a = mybuilder.create();
+                a.show();
+                return true;
             }
         });
 

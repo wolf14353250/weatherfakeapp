@@ -49,4 +49,12 @@ public class database extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public void delete1(String name) {
+        SQLiteDatabase db = getWritableDatabase();
+        String whereClause = "name=?";
+        String[] whereArgs = {name};
+        db.delete(TABLE_NAME,whereClause,whereArgs);
+        db.close();
+    }
+
 }

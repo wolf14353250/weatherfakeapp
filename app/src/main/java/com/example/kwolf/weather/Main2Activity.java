@@ -80,6 +80,7 @@ public class Main2Activity extends AppCompatActivity {
                     Intent intent = getIntent();
                     Bundle bundle = intent.getExtras();
                     final String city = bundle.getString("city");
+                    Log.i("key","111"+city);
                     String request = city;
                     request = URLEncoder.encode(request,"utf-8");
                     out.writeBytes("theCityCode="+request+"&theUserID=");
@@ -159,7 +160,7 @@ public class Main2Activity extends AppCompatActivity {
                             x1 = s1.indexOf("：",x2+1);
                             x2 = s1.indexOf("。",x2+1);
                             Map<String,String> temp1 = new LinkedHashMap<>();
-                            temp1.put("title","感冒指数");
+                            temp1.put("title","血糖指数");
                             temp1.put("content",s1.substring(x1+1,x2));
                             data.add(temp1);
                             x1 = s1.indexOf("：",x2+1);
@@ -177,7 +178,7 @@ public class Main2Activity extends AppCompatActivity {
                             x1 = s1.indexOf("：",x2+1);
                             x2 = s1.indexOf("。",x2+1);
                             Map<String,String> temp4 = new LinkedHashMap<>();
-                            temp4.put("title","运动指数");
+                            temp4.put("title","空气污染指数");
                             temp4.put("content",s1.substring(x1+1,x2));
                             data.add(temp4);
                             ListView ls = (ListView) findViewById(R.id.list1);
@@ -187,6 +188,57 @@ public class Main2Activity extends AppCompatActivity {
                             s1 = l1.next().toString();
                             TextView t7 = (TextView) findViewById(R.id.temp2);
                             t7.setText(s1);
+
+                            List<Map<String,String>> data1 = new ArrayList<>();
+                            Map<String,String> temp5 = new LinkedHashMap<>();
+                            s1 = l1.next().toString();
+                            x1 = s1.indexOf(" ");
+                            temp5.put("date",s1.substring(0,x1));
+                            temp5.put("weather1",s1.substring(x1+1));
+                            l1.next();
+                            temp.put("temper",l1.toString());
+                            data1.add(temp5);
+
+                            Map<String,String> temp6 = new LinkedHashMap<>();
+                            s1 = l1.next().toString();
+                            x1 = s1.indexOf(" ");
+                            temp6.put("date",s1.substring(0,x1));
+                            temp6.put("weather1",s1.substring(x1+1));
+                            l1.next();
+                            temp6.put("temper",l1.toString());
+                            data1.add(temp6);
+
+                            Map<String,String> temp7 = new LinkedHashMap<>();
+                            s1 = l1.next().toString();
+                            x1 = s1.indexOf(" ");
+                            temp7.put("date",s1.substring(0,x1));
+                            temp7.put("weather1",s1.substring(x1+1));
+                            l1.next();
+                            temp7.put("temper",l1.toString());
+                            data1.add(temp7);
+
+                            Map<String,String> temp8 = new LinkedHashMap<>();
+                            s1 = l1.next().toString();
+                            x1 = s1.indexOf(" ");
+                            temp8.put("date",s1.substring(0,x1));
+                            temp8.put("weather1",s1.substring(x1+1));
+                            l1.next();
+                            temp8.put("temper",l1.toString());
+                            data1.add(temp8);
+
+                            Map<String,String> temp9 = new LinkedHashMap<>();
+                            s1 = l1.next().toString();
+                            x1 = s1.indexOf(" ");
+                            temp9.put("date",s1.substring(0,x1));
+                            temp9.put("weather1",s1.substring(x1+1));
+                            l1.next();
+                            temp9.put("temper",l1.toString());
+                            data1.add(temp9);
+
+                            HorizontalListView ls1 = (HorizontalListView) findViewById(R.id.list2);
+                            SimpleAdapter sa = new SimpleAdapter(Main2Activity.this,data1,R.layout.item2,new String[]{"date","weather1","temper"},new int[]{R.id.date,R.id.weather1,R.id.temper});
+                            ls1.setAdapter(sa);
+
                         }
                     }
 
@@ -200,6 +252,17 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+
+        final Button b = (Button)findViewById(R.id.selection);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main2Activity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         if (networkInfo != null && networkInfo.isConnected()) {
@@ -209,4 +272,6 @@ public class Main2Activity extends AppCompatActivity {
             Toast.makeText(Main2Activity.this,"当前没有可用网络！",Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }
