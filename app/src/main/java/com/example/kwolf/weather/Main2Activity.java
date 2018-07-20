@@ -127,9 +127,16 @@ public class Main2Activity extends AppCompatActivity {
                             Toast.makeText(Main2Activity.this,"你的点击速度过快，二次查询间隔<600ms",Toast.LENGTH_SHORT).show();
                         }
                         else {
+
+                            //Intent intent = new Intent("STATICACTION");
+                            //Bundle bundle = new Bundle();
+                            //int imag = (int)map.get("imag");
+                            //bundle.putInt("imag",imag);
+
                             Log.i("Key","111");
                             TextView t1 = (TextView) findViewById(R.id.city1);
                             t1.setText(l1.next().toString());
+                            //bundle.putString("name",l1.toString());
                             l1.next();
                             String time = l1.next().toString();
                             time = time.substring(time.indexOf(" "));
@@ -185,8 +192,6 @@ public class Main2Activity extends AppCompatActivity {
                             SimpleAdapter simpleAdapter = new SimpleAdapter(Main2Activity.this,data,R.layout.item1,new String[]{"title","content"},new int[]{R.id.item1,R.id.item2});
                             ls.setAdapter(simpleAdapter);
 
-                            l1.next();
-                            s1 = l1.next().toString();
 
                             List<Map<String,String>> data1 = new ArrayList<>();
                             Map<String,String> temp5 = new LinkedHashMap<>();
@@ -194,52 +199,67 @@ public class Main2Activity extends AppCompatActivity {
                             x1 = s1.indexOf(" ");
                             temp5.put("date",s1.substring(0,x1));
                             temp5.put("weather1",s1.substring(x1+1));
-                            l1.next();
+                            s1 = l1.next().toString();
                             TextView t7 = (TextView) findViewById(R.id.temp2);
-                            t7.setText(l1.toString());
-                            temp.put("temper",l1.toString());
+                            t7.setText(s1);
+                            temp5.put("temper",s1);
                             data1.add(temp5);
+                            l1.next();
+                            l1.next();
+                            l1.next();
 
                             Map<String,String> temp6 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             temp6.put("date",s1.substring(0,x1));
                             temp6.put("weather1",s1.substring(x1+1));
-                            l1.next();
-                            temp6.put("temper",l1.toString());
+                            s1 = l1.next().toString();
+                            temp6.put("temper",s1);
                             data1.add(temp6);
+                            l1.next();
+                            l1.next();
+                            l1.next();
 
                             Map<String,String> temp7 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             temp7.put("date",s1.substring(0,x1));
                             temp7.put("weather1",s1.substring(x1+1));
-                            l1.next();
-                            temp7.put("temper",l1.toString());
+                            s1 = l1.next().toString();
+                            temp7.put("temper",s1);
                             data1.add(temp7);
+                            l1.next();
+                            l1.next();
+                            l1.next();
 
                             Map<String,String> temp8 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             temp8.put("date",s1.substring(0,x1));
                             temp8.put("weather1",s1.substring(x1+1));
-                            l1.next();
-                            temp8.put("temper",l1.toString());
+                            s1 = l1.next().toString();
+                            temp8.put("temper",s1);
                             data1.add(temp8);
+                            l1.next();
+                            l1.next();
+                            l1.next();
 
                             Map<String,String> temp9 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             temp9.put("date",s1.substring(0,x1));
                             temp9.put("weather1",s1.substring(x1+1));
-                            l1.next();
-                            temp9.put("temper",l1.toString());
+                            s1 = l1.next().toString();
+                            temp9.put("temper",s1);
+                            //bundle.putString("temp",l1.toString());
                             data1.add(temp9);
 
                             HorizontalListView ls1 = (HorizontalListView) findViewById(R.id.list2);
                             SimpleAdapter sa = new SimpleAdapter(Main2Activity.this,data1,R.layout.item2,new String[]{"date","weather1","temper"},new int[]{R.id.date,R.id.weather1,R.id.temper});
                             ls1.setAdapter(sa);
 
+                            //intent.putExtras(bundle);
+                            //sendBroadcast(intent);
                         }
                     }
 

@@ -8,8 +8,8 @@
     android:layout_marginRight="20dp">
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:id="@+id/widget_image"
         android:src="@drawable/default_hover"
         android:layout_marginLeft="10dp"/>
@@ -17,19 +17,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Widget"
+        android:textSize="20dp"
+        android:text="广州"
         android:id="@+id/widget_location"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:layout_marginLeft="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="26℃/34℃"
-        android:textSize="25dp"
-        android:textColor="#000000"
-        android:layout_marginLeft="10dp"/>
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/widget_temp"/>
 
 
 

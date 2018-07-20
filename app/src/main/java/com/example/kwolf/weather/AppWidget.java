@@ -55,8 +55,10 @@ public class AppWidget extends AppWidgetProvider {
         if (intent.getAction().equals("STATICACTION")) {
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
             String name = bundle.get("name").toString();
+            String temp = bundle.get("temp").toString();
             int imag = (int)bundle.get("imag");
             rv.setTextViewText(R.id.widget_location,name);
+            rv.setTextViewText(R.id.widget_temp,temp);
             rv.setImageViewResource(R.id.widget_image,imag);
             ComponentName me = new ComponentName(context,AppWidget.class);
             appWidgetManager.updateAppWidget(me,rv);

@@ -132,12 +132,12 @@
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
-        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\src\\main\\res\\layout\\activity_main3.xml"
-    },
-    {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main3.xml",
+        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\src\\main\\res\\layout\\activity_main3.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
