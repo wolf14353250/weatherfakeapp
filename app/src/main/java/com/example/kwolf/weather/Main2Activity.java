@@ -91,7 +91,7 @@ public class Main2Activity extends AppCompatActivity {
                     while ((line = reader.readLine()) != null) {
                         response.append(line);
                     }
-
+                    Log.i("key","222");
                     Message message = new Message();
                     message.what = UPDATE_CONTENT;
                     message.obj = parseXMLWithPull(response.toString());

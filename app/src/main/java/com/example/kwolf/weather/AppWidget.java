@@ -19,7 +19,8 @@ public class AppWidget extends AppWidgetProvider {
 
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.app_widget);
-        views.setTextViewText(R.id.widget_location, "Widget");
+        views.setTextViewText(R.id.widget_location, "深圳");
+        views.setTextViewText(R.id.widget_temp,"26℃/34℃");
         views.setImageViewResource(R.id.widget_image,R.drawable.default_hover);
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
