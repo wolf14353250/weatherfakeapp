@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String url = "http://ws.webxml.com.cn/WebServices/WeatherWS.asmx/getWeather";
     private static final int UPDATE_CONTENT = 0;
-    private int i = 0;
+    private static int i = 0;
 
     private ArrayList<String> parseXMLWithPull(String xml) throws XmlPullParserException, IOException {
         XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -84,14 +84,15 @@ public class MainActivity extends AppCompatActivity {
                     DataOutputStream out = new DataOutputStream(connection.getOutputStream());
 
                     String city = "广州";
+                    Log.i("key","i"+i);
                     if (i != 0) {
                         Intent intent = getIntent();
                         Bundle bundle = intent.getExtras();
                         city = bundle.getString("city");
-                        i = 1;
                     }
+                    i = 1;
+                    Log.i("key",city);
 
-                    Log.i("key","111"+city);
                     String request = city;
                     request = URLEncoder.encode(request,"utf-8");
                     out.writeBytes("theCityCode="+request+"&theUserID=");
@@ -102,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                     while ((line = reader.readLine()) != null) {
                         response.append(line);
                     }
-                    Log.i("key","222");
                     Message message = new Message();
                     message.what = UPDATE_CONTENT;
                     message.obj = parseXMLWithPull(response.toString());
@@ -139,15 +139,15 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else {
 
-                            //Intent intent = new Intent("STATICACTION");
-                            //Bundle bundle = new Bundle();
-                            //int imag = (int)map.get("imag");
-                            //bundle.putInt("imag",imag);
+                            Intent intent = new Intent("STATICACTION");
+                            Bundle bundle = new Bundle();
 
-                            Log.i("Key","111");
                             TextView t1 = (TextView) findViewById(R.id.city1);
-                            t1.setText(l1.next().toString());
-                            //bundle.putString("name",l1.toString());
+                            String s2 = l1.next().toString();
+                            t1.setText(s2);
+
+                            bundle.putString("city",s2);
+
                             l1.next();
                             String time = l1.next().toString();
                             time = time.substring(time.indexOf(" "));
@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
                             int x1 = s1.indexOf("；");
                             TextView t3 = (TextView) findViewById(R.id.temp);
                             t3.setText(s1.substring(10,x1));
+                            bundle.putString("temper",s1.substring(10,x1));
                             int x2 = s1.indexOf("；",x1+1);
                             TextView t4 = (TextView) findViewById(R.id.wind);
                             t4.setText(s1.substring(x1+7,x2));
@@ -210,9 +211,41 @@ public class MainActivity extends AppCompatActivity {
                             x1 = s1.indexOf(" ");
                             temp5.put("date",s1.substring(0,x1));
                             temp5.put("weather1",s1.substring(x1+1));
+                            s2 = s1.substring(x1+1);
+                            bundle.putString("weather2",s2);
+                            if (s2.length() > 2) {
+                                s2 = s2.substring(s2.length()-2);
+                            }
+                            Log.i("Key",s2);
+                            switch (s2) {
+                                case "大雨":
+                                    bundle.putInt("imag",R.drawable.rain3);
+                                    break;
+                                case "小雨":
+                                    bundle.putInt("imag",R.drawable.rain1);
+                                    break;
+                                case "晴":
+                                    bundle.putInt("imag",R.drawable.sun1);
+                                    break;
+                                case "中雨":
+                                    bundle.putInt("imag",R.drawable.rain2);
+                                    break;
+                                case "多云":
+                                    bundle.putInt("imag",R.drawable.cloud);
+                                    break;
+                                case "转晴":
+                                    bundle.putInt("imag",R.drawable.sun1);
+                                    break;
+                                default:
+                                    bundle.putInt("imag",R.drawable.thunder);
+                                    break;
+                            }
+
+
                             s1 = l1.next().toString();
                             TextView t7 = (TextView) findViewById(R.id.temp2);
                             t7.setText(s1);
+                            bundle.putString("temper1",s1);
                             temp5.put("temper",s1);
                             data1.add(temp5);
                             l1.next();
@@ -269,8 +302,8 @@ public class MainActivity extends AppCompatActivity {
                             SimpleAdapter sa = new SimpleAdapter(MainActivity.this,data1,R.layout.item2,new String[]{"date","weather1","temper"},new int[]{R.id.date,R.id.weather1,R.id.temper});
                             ls1.setAdapter(sa);
 
-                            //intent.putExtras(bundle);
-                            //sendBroadcast(intent);
+                            intent.putExtras(bundle);
+                            sendBroadcast(intent);
                         }
                     }
 

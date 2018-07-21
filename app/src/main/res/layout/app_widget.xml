@@ -1,37 +1,21 @@
-<LinearLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginTop="20dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp">
-
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:id="@+id/widget_image"
-        android:src="@drawable/default_hover"
-        android:layout_marginLeft="10dp"/>
+    android:padding="@dimen/widget_margin"
+    android:background="#09C" >
 
     <TextView
+        android:id="@+id/appwidget_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="广州"
-        android:id="@+id/widget_location"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="10dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/appwidget_text"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/appwidget_text"
+        android:background="#09C"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="26℃/34℃"
-        android:textSize="20dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/widget_temp"/>
-
-
-
-</LinearLayout>
+</RelativeLayout>
