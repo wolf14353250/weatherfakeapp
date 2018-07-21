@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String url = "http://ws.webxml.com.cn/WebServices/WeatherWS.asmx/getWeather";
     private static final int UPDATE_CONTENT = 0;
     private static int i = 0;
+    private static String temps;
 
     private ArrayList<String> parseXMLWithPull(String xml) throws XmlPullParserException, IOException {
         XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -84,14 +85,18 @@ public class MainActivity extends AppCompatActivity {
                     DataOutputStream out = new DataOutputStream(connection.getOutputStream());
 
                     String city = "广州";
-                    Log.i("key","i"+i);
                     if (i != 0) {
                         Intent intent = getIntent();
                         Bundle bundle = intent.getExtras();
                         city = bundle.getString("city");
+                        if (city.equals("null")) {
+                            city = temps;
+                        }
+                        else {
+                            temps = city;
+                        }
                     }
                     i = 1;
-                    Log.i("key",city);
 
                     String request = city;
                     request = URLEncoder.encode(request,"utf-8");

@@ -16,7 +16,7 @@ import android.widget.TextView;
  * Implementation of App Widget functionality.
  */
 public class AppWidget extends AppWidgetProvider {
-    static String s = "广州";
+    static String s = "null";
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -78,8 +78,6 @@ public class AppWidget extends AppWidgetProvider {
             rv.setTextViewText(R.id.appwidget_temper,temper);
             rv.setTextViewText(R.id.temper1,temper1);
 
-            Log.i("key","widget2 "+s+" "+name);
-            s = name;
             ComponentName me = new ComponentName(context,AppWidget.class);
             appWidgetManager.updateAppWidget(me,rv);
         }
