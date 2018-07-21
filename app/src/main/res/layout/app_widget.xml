@@ -1,21 +1,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/widget_margin"
-    android:background="#09C" >
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/appwidget_text"
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/widget_image"
+        android:src="@drawable/sun1" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/layout1"
+        android:layout_toRightOf="@id/widget_image"
+        android:orientation="vertical"
         android:layout_centerVertical="true"
-        android:text="@string/appwidget_text"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:layout_margin="8dp"
-        android:contentDescription="@string/appwidget_text"
-        android:background="#09C"/>
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州"
+            android:layout_toRightOf="@id/widget_image"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appwidget_text"
+            android:layout_toRightOf="@id/widget_image"
+            android:textSize="18dp"
+            android:text="晴天"
+            android:textColor="#ffffff"
+            android:id="@+id/weather2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout1"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/appwidget_temper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="24℃"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11℃/22℃"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:id="@+id/temper1"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
