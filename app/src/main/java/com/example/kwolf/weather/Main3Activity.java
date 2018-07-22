@@ -177,16 +177,6 @@ public class Main3Activity extends AppCompatActivity {
                             Toast.makeText(Main3Activity.this,"当前没有可用网络！",Toast.LENGTH_SHORT).show();
                         }
 
-                        ////
-                        /*
-                        String name = e1.getText().toString();
-                        db.insert2DB(name);
-                        Log.i("Key","add "+name);
-                        Intent intent1 = new Intent(Main3Activity.this,MainActivity.class);
-                        Bundle bundle1 = new Bundle();
-                        bundle1.putString("city",name);
-                        intent1.putExtras(bundle1);
-                        startActivity(intent1);*/
                     }
                 }
             }

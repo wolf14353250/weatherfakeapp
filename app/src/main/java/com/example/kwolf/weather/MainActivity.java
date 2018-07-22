@@ -85,7 +85,20 @@ public class MainActivity extends AppCompatActivity {
                     connection.setConnectTimeout(8000);
                     DataOutputStream out = new DataOutputStream(connection.getOutputStream());
 
-                    String city = "广州";
+                    String city = "";
+                    if (i == 0) {
+                        database db = new database(MainActivity.this);
+                        Cursor cursor = db.query();
+                        if (cursor.getCount() >= 0) {
+                            cursor.moveToNext();
+                            Map<String,String> temp = new LinkedHashMap<>();
+                            int col1 = cursor.getColumnIndex("name");
+                            city = cursor.getString(col1);
+                        }
+                        else {
+                            city = "广州";
+                        }
+                    }
                     if (i != 0) {
                         Intent intent = getIntent();
                         Bundle bundle = intent.getExtras();
