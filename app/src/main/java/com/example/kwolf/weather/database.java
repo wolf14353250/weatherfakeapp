@@ -33,7 +33,7 @@ public class database extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("name",name);
-        cv.put("tempreture","null");
+        cv.put("tempreture","28");
         db.insert(TABLE_NAME,null,cv);
         db.close();
     }
