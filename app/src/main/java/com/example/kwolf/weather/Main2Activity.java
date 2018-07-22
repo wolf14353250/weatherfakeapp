@@ -66,10 +66,8 @@ public class Main2Activity extends AppCompatActivity {
                 Map<String,String> temp = new LinkedHashMap<>();
                 int col1 = cursor.getColumnIndex("name");
                 String name = cursor.getString(col1);
-                int col2 = cursor.getColumnIndex("tempreture");
-                String tempre = cursor.getString(col2);
                 temp.put("name",name);
-                temp.put("tempre",tempre);
+
                 data.add(temp);
             }
             ListView ls = (ListView) findViewById(R.id.list);
@@ -132,11 +130,15 @@ public class Main2Activity extends AppCompatActivity {
                 Map<String,String> temp = new LinkedHashMap<>();
                 int col1 = cursor.getColumnIndex("name");
                 String name = cursor.getString(col1);
+                int col2 = cursor.getColumnIndex("tempreture");
+                String tempre = cursor.getString(col2);
+                Log.i("key","te,p "+tempre);
                 temp.put("name",name);
+                temp.put("tempre",tempre);
                 data.add(temp);
             }
             ListView ls = (ListView) findViewById(R.id.list);
-            final SimpleAdapter sa = new SimpleAdapter(this,data,R.layout.item,new String[]{"name"},new int[]{R.id.city});
+            final SimpleAdapter sa = new SimpleAdapter(this,data,R.layout.item,new String[]{"name","tempre"},new int[]{R.id.city,R.id.tempre});
             ls.setAdapter(sa);
         }
     }

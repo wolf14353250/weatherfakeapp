@@ -228,8 +228,14 @@ public class MainActivity extends AppCompatActivity {
                             TextView t3 = (TextView) findViewById(R.id.temp);
                             t3.setText(s1.substring(10,x1));
                             s2 = s1.substring(10,x1-1);
+
+                            Log.i("key","city1 "+city);
                             database db = new database(MainActivity.this);
-                            //db.inserttempre(city,s2);
+                            Cursor cursor = db.query1(city);
+                            if (cursor.getCount() > 0) {
+                                db.inserttempre(city,s2);
+                            }
+                            db.inserttempre(city,s2);
 
                             bundle.putString("temper",s1.substring(10,x1));
                             int x2 = s1.indexOf("；",x1+1);

@@ -20,7 +20,7 @@ public class database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate (SQLiteDatabase sqLiteDatabase) {
-        String CREATE_TABLE = "CREATE TABLE if not exists "+TABLE_NAME+" (_id INTEGER PRIMARY KEY, name TEXT, tempreture TEXT DEFAULT NULL)";
+        String CREATE_TABLE = "CREATE TABLE if not exists "+TABLE_NAME+" (_id INTEGER PRIMARY KEY, name TEXT, tempreture TEXT)";
         sqLiteDatabase.execSQL(CREATE_TABLE);
     }
 
@@ -33,6 +33,7 @@ public class database extends SQLiteOpenHelper {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("name",name);
+        cv.put("tempreture","null");
         db.insert(TABLE_NAME,null,cv);
         db.close();
     }
@@ -60,7 +61,7 @@ public class database extends SQLiteOpenHelper {
     public void inserttempre(String name, String tempre) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues cv = new ContentValues();
-        cv.put("tempretrue",tempre);
+        cv.put("tempreture",tempre);
         String whereClause = "name=?";
         String[] whereArgs={name};
         db.update(TABLE_NAME,cv,whereClause,whereArgs);
