@@ -35,12 +35,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -181,6 +183,36 @@ public class MainActivity extends AppCompatActivity {
 
                             Intent intent = new Intent("STATICACTION");
                             Bundle bundle = new Bundle();
+
+                            final Calendar calendar = Calendar.getInstance();
+                            calendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+                            String weekday = String.valueOf(calendar.get(Calendar.DAY_OF_WEEK));
+                            String wd;
+                            switch (weekday) {
+                                case "1":
+                                    wd = "星期日";
+                                    break;
+                                case "2":
+                                    wd = "星期一";
+                                    break;
+                                case "3":
+                                    wd = "星期二";
+                                    break;
+                                case "4":
+                                    wd = "星期三";
+                                    break;
+                                case "5":
+                                    wd = "星期四";
+                                    break;
+                                case "6":
+                                    wd = "星期五";
+                                    break;
+                                default:
+                                    wd = "星期六";
+                                    break;
+                            }
+                            TextView weekview = (TextView)findViewById(R.id.whichweek);
+                            weekview.setText(wd);
 
                             TextView t1 = (TextView) findViewById(R.id.city1);
                             String s2 = l1.next().toString();
