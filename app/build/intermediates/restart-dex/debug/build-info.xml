@@ -4,71 +4,56 @@
     api-level="19"
     density="420dpi"
     format="7"
-    timestamp="122136060524013"
-    token="3107851854244663091"
-    verifier="COMPATIBLE" >
+    timestamp="21518139475707"
+    token="3107851854244663091" >
 
     <task
         name="javac"
-        duration="214" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="507" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="33" />
+        duration="0" />
     <task
         name="verifier"
-        duration="5" />
+        duration="0" />
 
     <artifact
-        location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="121769021930989" >
+    <build timestamp="20442787715962" >
         <artifact
             location="H:\Academy\Github\weatherfakeapp\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="121828819740066"
+        timestamp="20933810981620"
         verifier="COMPATIBLE" >
         <artifact
-            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\121828819740066\classes.dex"
+            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\20933810981620\classes.dex"
             type="RELOAD_DEX" />
     </build>
-    <build timestamp="121874196224859" >
+    <build
+        timestamp="21077382778979"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\21077382778979\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="21132540816305"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\21132540816305\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="21518139475707" >
         <artifact
             location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
-    </build>
-    <build
-        timestamp="121969910138325"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\121969910138325\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="122000868382450"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\122000868382450\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="122086044556213"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\builds\debug\122086044556213\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="122136060524013"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="H:\Academy\Github\weatherfakeapp\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

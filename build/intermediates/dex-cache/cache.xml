@@ -1,3 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_b8cdea837591c16373c79922f576a28906ebd0bf.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_07eade137b1e7b39e3fc9c0abad789f274252bfe.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.0_4eb8df2ea6c56f37484166b805c809b9a3c54e87.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.0_f373541239048c8d09f90535ba94c3f468e7b047.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.0_cfac6bfbb01ad99428b6829b881e466544bb3bf8.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_1ce562e38867c801d6dd646c0933bd3209b0e3f9.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.0_f36ad7ec2de8618edc79485bedcf43bca29d0446.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="e4e392c45dc9385e22caffee8dd59789c903a5e6">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\instant-run_5a2ba4a60446b07eb2b37148fcaa63c44c73f48b.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="39f625e5ba567585d1ddcfeb9082dafacf45b2f0">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2e75fca01d71c6e15f24c77f4004518bb11df255.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.0_7271062f334498ed184a3ab029aa23fb613a90c0.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.0_fc58a6174feda83424b8996d8791ae03eb6b0f7d.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_e56b9f30ee7b5e7ac8eb471a0e56770f4dda5f52.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.0_7f47998284f52e12bc68b78eb701e995323cf4a2.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.0_702e9424a4fc53c955cefef8ec880ea9657941d1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Kwolf\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.0_579e0e118065da37dbc3f936e2fd3a54b4fb1778.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.0_484a1196f53eabbab1ebe33a4c5481e78453e189.jar" />
+    </item>
+    <item
+        jar="H:\Academy\Github\weatherfakeapp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="H:\Academy\Github\weatherfakeapp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.0_86a6ad6902a681516b67892940f4c83e971c43ee.jar" />
+    </item>
+
+</items>

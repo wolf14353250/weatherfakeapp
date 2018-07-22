@@ -4,12 +4,12 @@
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
@@ -60,12 +60,12 @@
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
-        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -88,12 +88,12 @@
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_mode_bar.xml"
-    },
-    {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -108,16 +108,16 @@
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
+        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\src\\main\\res\\layout\\item.xml"
+    },
+    {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main2.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\src\\main\\res\\layout\\activity_main2.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
-        "source": "H:\\Academy\\Github\\weatherfakeapp\\app\\src\\main\\res\\layout\\item.xml"
     },
     {
         "merged": "H:\\Academy\\Github\\weatherfakeapp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
