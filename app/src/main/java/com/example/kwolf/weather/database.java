@@ -20,7 +20,7 @@ public class database extends SQLiteOpenHelper {
 
     @Override
     public void onCreate (SQLiteDatabase sqLiteDatabase) {
-        String CREATE_TABLE = "CREATE TABLE if not exists "+TABLE_NAME+" (_id INTEGER PRIMARY KEY, name TEXT)";
+        String CREATE_TABLE = "CREATE TABLE if not exists "+TABLE_NAME+" (_id INTEGER PRIMARY KEY, name TEXT, tempreture INTEGER DEFAULT 0)";
         sqLiteDatabase.execSQL(CREATE_TABLE);
     }
 
