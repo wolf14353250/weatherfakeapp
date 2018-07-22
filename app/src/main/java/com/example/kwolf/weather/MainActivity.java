@@ -40,6 +40,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -188,20 +189,13 @@ public class MainActivity extends AppCompatActivity {
                             bundle.putString("city",s2);
 
                             l1.next();
-                            String time = l1.next().toString();
-                            time = time.substring(time.indexOf(" "));
-                            TextView t2 = (TextView) findViewById(R.id.time);
-                            t2.setText(time);
+                            l1.next();
                             String s1 = l1.next().toString();
                             int x1 = s1.indexOf("；");
                             TextView t3 = (TextView) findViewById(R.id.temp);
                             t3.setText(s1.substring(10,x1));
                             bundle.putString("temper",s1.substring(10,x1));
                             int x2 = s1.indexOf("；",x1+1);
-                            TextView t4 = (TextView) findViewById(R.id.wind);
-                            t4.setText(s1.substring(x1+7,x2));
-                            TextView t5 = (TextView) findViewById(R.id.hum);
-                            t5.setText(s1.substring(x2+4));
                             s1 = l1.next().toString();
                             x1 = s1.lastIndexOf("：");
                             x2 = s1.lastIndexOf("。");
@@ -244,19 +238,21 @@ public class MainActivity extends AppCompatActivity {
                             ls.setAdapter(simpleAdapter);
 
 
-                            List<Map<String,String>> data1 = new ArrayList<>();
-                            Map<String,String> temp5 = new LinkedHashMap<>();
+                            List<Map<String,Object>> data1 = new ArrayList<>();
+                            Map<String,Object> temp5 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             s2 = resettime(s1.substring(0,x1-1));
                             temp5.put("date",s2);
-                            temp5.put("weather1",s1.substring(x1+1));
+
                             s2 = s1.substring(x1+1);
                             bundle.putString("weather2",s2);
                             if (s2.length() > 2) {
                                 s2 = s2.substring(s2.length()-2);
                             }
                             Log.i("Key",s2);
+                            int image1 = resetimage(s2);
+                            temp5.put("weather1",image1);
                             switch (s2) {
                                 case "大雨":
                                     bundle.putInt("imag",R.drawable.rain3);
@@ -292,12 +288,14 @@ public class MainActivity extends AppCompatActivity {
                             l1.next();
                             l1.next();
 
-                            Map<String,String> temp6 = new LinkedHashMap<>();
+                            Map<String,Object> temp6 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             s2 = resettime(s1.substring(0,x1-1));
                             temp6.put("date",s2);
-                            temp6.put("weather1",s1.substring(x1+1));
+
+                            image1 = resetimage(s1.substring(x1+1));
+                            temp6.put("weather1",image1);
                             s1 = l1.next().toString();
                             temp6.put("temper",s1);
                             data1.add(temp6);
@@ -305,12 +303,13 @@ public class MainActivity extends AppCompatActivity {
                             l1.next();
                             l1.next();
 
-                            Map<String,String> temp7 = new LinkedHashMap<>();
+                            Map<String,Object> temp7 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             s2 = resettime(s1.substring(0,x1-1));
                             temp7.put("date",s2);
-                            temp7.put("weather1",s1.substring(x1+1));
+                            image1 = resetimage(s1.substring(x1+1));
+                            temp7.put("weather1",image1);
                             s1 = l1.next().toString();
                             temp7.put("temper",s1);
                             data1.add(temp7);
@@ -318,12 +317,13 @@ public class MainActivity extends AppCompatActivity {
                             l1.next();
                             l1.next();
 
-                            Map<String,String> temp8 = new LinkedHashMap<>();
+                            Map<String,Object> temp8 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             s2 = resettime(s1.substring(0,x1-1));
                             temp8.put("date",s2);
-                            temp8.put("weather1",s1.substring(x1+1));
+                            image1 = resetimage(s1.substring(x1+1));
+                            temp8.put("weather1",image1);
                             s1 = l1.next().toString();
                             temp8.put("temper",s1);
                             data1.add(temp8);
@@ -331,12 +331,13 @@ public class MainActivity extends AppCompatActivity {
                             l1.next();
                             l1.next();
 
-                            Map<String,String> temp9 = new LinkedHashMap<>();
+                            Map<String,Object> temp9 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
                             s2 = resettime(s1.substring(0,x1-1));
                             temp9.put("date",s2);
-                            temp9.put("weather1",s1.substring(x1+1));
+                            image1 = resetimage(s1.substring(x1+1));
+                            temp9.put("weather1",image1);
                             s1 = l1.next().toString();
                             temp9.put("temper",s1);
                             //bundle.putString("temp",l1.toString());

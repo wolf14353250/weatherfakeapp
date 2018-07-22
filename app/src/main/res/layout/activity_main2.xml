@@ -47,18 +47,6 @@
         android:fontFamily="sans-serif-thin"
             />
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp" />
-
     <TextView
         android:id="@+id/temp2"
         android:layout_width="match_parent"
@@ -79,42 +67,10 @@
         android:layout_marginTop="20dp">
     </com.example.kwolf.weather.HorizontalListView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/draw">
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/hum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/text"
-
-            android:textSize="20dp" />
-        <TextView
-            android:id="@+id/wind"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/text"
-            android:layout_marginBottom="10dp"
-
-            android:textSize="20dp" />
-    </RelativeLayout>
-
     <ListView
         android:id="@+id/list1"
         android:layout_width="wrap_content"
         android:layout_height="183dp">
-
     </ListView>
 
     <Button
