@@ -217,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
                             TextView t1 = (TextView) findViewById(R.id.city1);
                             String s2 = l1.next().toString();
                             t1.setText(s2);
+                            String city = s2;
 
                             bundle.putString("city",s2);
 
@@ -226,6 +227,10 @@ public class MainActivity extends AppCompatActivity {
                             int x1 = s1.indexOf("；");
                             TextView t3 = (TextView) findViewById(R.id.temp);
                             t3.setText(s1.substring(10,x1));
+                            s2 = s1.substring(10,x1-1);
+                            database db = new database(MainActivity.this);
+                            //db.inserttempre(city,s2);
+
                             bundle.putString("temper",s1.substring(10,x1));
                             int x2 = s1.indexOf("；",x1+1);
                             s1 = l1.next().toString();
