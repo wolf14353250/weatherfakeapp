@@ -125,6 +125,40 @@ public class MainActivity extends AppCompatActivity {
         }).start();
     }
 
+    private String resettime(String s) {
+        String ans;
+        ans = s.replace("月",".");
+        return ans;
+    }
+
+    private int resetimage(String s) {
+        int ans;
+        switch (s) {
+            case "大雨":
+                ans = R.drawable.rain4;
+                break;
+            case "小雨":
+                ans = R.drawable.rain4;
+                break;
+            case "晴":
+                ans = R.drawable.sun;
+                break;
+            case "中雨":
+                ans = R.drawable.rain4;
+                break;
+            case "多云":
+                ans = R.drawable.clouds;
+                break;
+            case "转晴":
+                ans = R.drawable.sun;
+                break;
+            default:
+                ans = R.drawable.thunder1;
+                break;
+        }
+        return ans;
+    }
+
     private Handler handler = new Handler() {
         public void handleMessage(Message message) {
             switch (message.what) {
@@ -214,7 +248,8 @@ public class MainActivity extends AppCompatActivity {
                             Map<String,String> temp5 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
-                            temp5.put("date",s1.substring(0,x1));
+                            s2 = resettime(s1.substring(0,x1-1));
+                            temp5.put("date",s2);
                             temp5.put("weather1",s1.substring(x1+1));
                             s2 = s1.substring(x1+1);
                             bundle.putString("weather2",s2);
@@ -260,7 +295,8 @@ public class MainActivity extends AppCompatActivity {
                             Map<String,String> temp6 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
-                            temp6.put("date",s1.substring(0,x1));
+                            s2 = resettime(s1.substring(0,x1-1));
+                            temp6.put("date",s2);
                             temp6.put("weather1",s1.substring(x1+1));
                             s1 = l1.next().toString();
                             temp6.put("temper",s1);
@@ -272,7 +308,8 @@ public class MainActivity extends AppCompatActivity {
                             Map<String,String> temp7 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
-                            temp7.put("date",s1.substring(0,x1));
+                            s2 = resettime(s1.substring(0,x1-1));
+                            temp7.put("date",s2);
                             temp7.put("weather1",s1.substring(x1+1));
                             s1 = l1.next().toString();
                             temp7.put("temper",s1);
@@ -284,7 +321,8 @@ public class MainActivity extends AppCompatActivity {
                             Map<String,String> temp8 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
-                            temp8.put("date",s1.substring(0,x1));
+                            s2 = resettime(s1.substring(0,x1-1));
+                            temp8.put("date",s2);
                             temp8.put("weather1",s1.substring(x1+1));
                             s1 = l1.next().toString();
                             temp8.put("temper",s1);
@@ -296,7 +334,8 @@ public class MainActivity extends AppCompatActivity {
                             Map<String,String> temp9 = new LinkedHashMap<>();
                             s1 = l1.next().toString();
                             x1 = s1.indexOf(" ");
-                            temp9.put("date",s1.substring(0,x1));
+                            s2 = resettime(s1.substring(0,x1-1));
+                            temp9.put("date",s2);
                             temp9.put("weather1",s1.substring(x1+1));
                             s1 = l1.next().toString();
                             temp9.put("temper",s1);
