@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                             if (cursor.getCount() > 0) {
                                 db.inserttempre(city,s2);
                             }
-                            db.inserttempre(city,s2);
+                            //db.inserttempre(city,s2);
 
                             bundle.putString("temper",s1.substring(10,x1));
                             int x2 = s1.indexOf("；",x1+1);

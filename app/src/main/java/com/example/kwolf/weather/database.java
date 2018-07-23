@@ -29,11 +29,11 @@ public class database extends SQLiteOpenHelper {
 
     }
 
-    public void insert2DB (String name) {
+    public void insert2DB (String name,String tempre) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("name",name);
-        cv.put("tempreture","null");
+        cv.put("tempreture",tempre);
         db.insert(TABLE_NAME,null,cv);
         db.close();
     }

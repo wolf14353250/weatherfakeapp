@@ -33,10 +33,12 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 
 public class Main3Activity extends AppCompatActivity {
 
@@ -129,9 +131,18 @@ public class Main3Activity extends AppCompatActivity {
                             EditText e1 = (EditText) findViewById(R.id.name2);
                             database db = new database(Main3Activity.this);
                             String name = e1.getText().toString();
-                            db.insert2DB(name);
-                            Log.i("Key","add "+name);
 
+                            Log.i("Key","add "+name);
+                            ///
+                            l1.next();
+                            String s2;
+                            l1.next();
+                            l1.next();
+                            String s1 = l1.next().toString();
+                            int x1 = s1.indexOf("；");
+                            s2 = s1.substring(10,x1-1);
+                            db.insert2DB(name,s2);
+                            //
                             Intent intent1 = new Intent(Main3Activity.this,Main2Activity.class);
                             //Bundle bundle1 = new Bundle();
                             //bundle1.putString("city",name);
