@@ -7,14 +7,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
+    <Button
+        android:id="@+id/selection"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/hamburg" />
     <TextView
         android:id="@+id/city1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="广州"
-        android:paddingTop="40sp"
+        android:paddingTop="30sp"
         android:textSize="50sp" />
 
     <RelativeLayout
@@ -94,24 +101,9 @@
     <ListView
         android:id="@+id/list1"
         android:layout_width="wrap_content"
-        android:layout_height="200dp">
-
+        android:layout_height="310sp"
+        android:divider="@null"
+        >
     </ListView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1sp"
-        android:background="@color/black"
-        />
-
-    <Button
-        android:id="@+id/selection"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="right"
-        android:layout_marginRight="15sp"
-        android:layout_marginTop="5sp"
-        android:background="@drawable/hamburg" />
-
 </LinearLayout>
 </ScrollView>

@@ -4,6 +4,8 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    android:layout_marginBottom="10sp"
     >
 
     <TextView
@@ -11,15 +13,15 @@
         android:layout_height="wrap_content"
         android:text="紫外线指数"
         android:textSize="18sp"
-        android:layout_marginTop="12sp"
-        android:layout_marginLeft="5sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="15sp"
         android:id="@+id/item1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="弱，辐射较弱，涂擦SPF12-15、PA+护肤品。"
-        android:layout_marginTop="12sp"
+        android:layout_marginTop="25sp"
         android:layout_marginLeft="3sp"
         android:textSize="16sp"
         android:layout_marginRight="5sp"
