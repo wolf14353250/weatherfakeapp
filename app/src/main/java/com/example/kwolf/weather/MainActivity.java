@@ -88,16 +88,17 @@ public class MainActivity extends AppCompatActivity {
                     DataOutputStream out = new DataOutputStream(connection.getOutputStream());
 
                     String city = "";
+                    Log.i("key","i "+i);
                     if (i == 0) {
                         database db = new database(MainActivity.this);
                         Cursor cursor = db.query();
-                        if (cursor.getCount() >= 0) {
+                        if (cursor.getCount() > 0) {
                             cursor.moveToNext();
-                            Map<String,String> temp = new LinkedHashMap<>();
                             int col1 = cursor.getColumnIndex("name");
                             city = cursor.getString(col1);
                             }
                         else {
+                            Log.i("key","222");
                             city = "广州";
                             }
                     }
