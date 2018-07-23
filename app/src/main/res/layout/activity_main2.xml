@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="广州"
-        android:paddingTop="40sp"
+        android:paddingTop="30sp"
         android:textSize="50sp" />
 
     <RelativeLayout
@@ -101,16 +101,9 @@
     <ListView
         android:id="@+id/list1"
         android:layout_width="wrap_content"
-        android:layout_height="200dp">
+        android:layout_height="310sp"
+        android:divider="@null"
+        >
     </ListView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1sp"
-        android:background="@color/black"
-        />
-
-
-
 </LinearLayout>
 </ScrollView>
