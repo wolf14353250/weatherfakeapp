@@ -87,7 +87,20 @@ public class MainActivity extends AppCompatActivity {
                     connection.setConnectTimeout(8000);
                     DataOutputStream out = new DataOutputStream(connection.getOutputStream());
 
-                    String city = "广州";
+                    String city = "";
+                    if (i == 0) {
+                        database db = new database(MainActivity.this);
+                        Cursor cursor = db.query();
+                        if (cursor.getCount() >= 0) {
+                            cursor.moveToNext();
+                            Map<String,String> temp = new LinkedHashMap<>();
+                            int col1 = cursor.getColumnIndex("name");
+                            city = cursor.getString(col1);
+                            }
+                        else {
+                            city = "广州";
+                            }
+                    }
                     if (i != 0) {
                         Intent intent = getIntent();
                         Bundle bundle = intent.getExtras();
@@ -183,6 +196,9 @@ public class MainActivity extends AppCompatActivity {
 
                             Intent intent = new Intent("STATICACTION");
                             Bundle bundle = new Bundle();
+
+                            TextView textView1 = (TextView)findViewById(R.id.text2);
+                            textView1.setText("空气质量：");
 
                             final Calendar calendar = Calendar.getInstance();
                             calendar.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));

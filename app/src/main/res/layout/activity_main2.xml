@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="广州"
+        android:text=""
         android:paddingTop="30sp"
         android:textSize="50sp" />
 
@@ -32,7 +32,7 @@
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="空气质量："
+            android:text=""
             android:textSize="16sp" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/text2"
-            android:text="中"
+            android:text=""
             android:textSize="16sp" />
     </RelativeLayout>
 
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="9℃"
+            android:text=""
             android:textSize="90sp"
             android:fontFamily="sans-serif-thin"
             />
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="星期五"
+            android:text=""
             android:textSize="22sp"
             android:layout_marginBottom="10sp"
             android:layout_marginLeft="5sp"
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:text="8℃/17℃"
+            android:text=""
             android:layout_marginBottom="10sp"
             android:layout_marginRight="5sp"
             android:textSize="22sp" />

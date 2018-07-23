@@ -132,7 +132,7 @@ public class Main2Activity extends AppCompatActivity {
                 String name = cursor.getString(col1);
                 int col2 = cursor.getColumnIndex("tempreture");
                 String tempre = cursor.getString(col2);
-                Log.i("key","te,p "+tempre);
+                Log.i("key","temp "+tempre);
                 temp.put("name",name);
                 temp.put("tempre",tempre);
                 data.add(temp);
